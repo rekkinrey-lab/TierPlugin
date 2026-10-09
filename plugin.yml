@@ -1,0 +1,17 @@
+name: TierPlugin
+version: ${project.version}
+main: com.example.tier.TierPlugin
+api-version: "1.21"
+description: Lets staff assign tiers (LT5-HT1) to players with /tier
+depend: [LuckPerms]
+
+commands:
+  tier:
+    description: Set a player's tier
+    usage: /tier <player> <tier|none>
+    permission: tierplugin.use
+
+permissions:
+  tierplugin.use:
+    description: Allows use of /tier
+    default: op
